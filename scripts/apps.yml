@@ -25,3 +25,12 @@ apps:
     latest_json_url: "https://github.com/XueshiQiao/netstat-cat/releases/latest/download/latest.json"
     asset_arm: "Netstat.Cat_silicon.app.tar.gz"
     asset_intel: "Netstat.Cat_intel.app.tar.gz"
+
+  - cask_token: "notifier"
+    app_name: "Notifier"
+    desc: "Notifier - Never miss a prompt again"
+    homepage: "https://github.com/XueshiQiao/Notifier"
+    app_bundle: "Notifier.app"
+    latest_json_url: "https://github.com/XueshiQiao/Notifier/releases/latest/download/latest.json"
+    asset_arm: "Notifier.dmg"
+    asset_intel: "Notifier.dmg"
