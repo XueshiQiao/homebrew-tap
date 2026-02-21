@@ -1,0 +1,46 @@
+name: Update Casks
+on:
+  repository_dispatch:
+    types: [update_cask]
+  workflow_dispatch:
+    inputs:
+      app_token:
+        description: 'App Token to update (e.g. pastepaw, netstat-cat)'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  update-cask:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          
+      - name: Generate Cask
+        run: |
+          if [ "${{ github.event_name }}" = "repository_dispatch" ]; then
+            APP_TOKEN="${{ github.event.client_payload.app_token }}"
+          else
+            APP_TOKEN="${{ github.event.inputs.app_token }}"
+          fi
+          
+          if [ -z "$APP_TOKEN" ]; then
+            echo "Error: APP_TOKEN is empty"
+            exit 1
+          fi
+          
+          echo "Updating cask for: $APP_TOKEN"
+          python3 scripts/generate_homebrew_casks.py "$APP_TOKEN"
+          
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update cask for ${{ github.event.client_payload.app_token || github.event.inputs.app_token }}"
+          file_pattern: Casks/*.rb
