@@ -1,13 +1,13 @@
 cask "hypercapslock" do
-  version "0.8.6"
-  sha256 arm:   "f1d86cf3d3fa5f3dcfa6168123d396f6155f43d771bef81517b837a6cc75b747",
-         intel: "41bef7cf26fda120ddce1357b9e88cdcc14002825de0e68854349c65aadb401a"
+  version "0.8.7"
+  sha256 arm:   "9594d626fca245cb28fd15d85c6431919bd992897dca44ca875a3f6c8bae8627",
+         intel: "96dcf11ecdbee101bce6a25e876048d17708a4f30387b5eb7f1cb59b236427ee"
 
   on_arm do
-    url "https://github.com/XueshiQiao/HyperCapslock/releases/download/v0.8.6/HyperCapslock_aarch64.app.tar.gz"
+    url "https://github.com/XueshiQiao/HyperCapslock/releases/download/v0.8.7/HyperCapslock_aarch64.app.tar.gz"
   end
   on_intel do
-    url "https://github.com/XueshiQiao/HyperCapslock/releases/download/v0.8.6/HyperCapslock_x64.app.tar.gz"
+    url "https://github.com/XueshiQiao/HyperCapslock/releases/download/v0.8.7/HyperCapslock_x64.app.tar.gz"
   end
 
   name "HyperCapslock"
