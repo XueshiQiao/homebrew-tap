@@ -34,3 +34,12 @@ apps:
     latest_json_url: "https://github.com/XueshiQiao/Notifier/releases/latest/download/latest.json"
     asset_arm: "Notifier.dmg"
     asset_intel: "Notifier.dmg"
+
+  - cask_token: "ccswitcher"
+    app_name: "CCSwitcher"
+    desc: "Menu bar app to manage and switch between Claude Code accounts"
+    homepage: "https://github.com/XueshiQiao/CCSwitcher"
+    app_bundle: "CCSwitcher.app"
+    latest_json_url: "https://github.com/XueshiQiao/CCSwitcher/releases/latest/download/latest.json"
+    asset_arm: "CCSwitcher.dmg"
+    asset_intel: "CCSwitcher.dmg"
