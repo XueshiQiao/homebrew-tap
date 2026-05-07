@@ -1,6 +1,6 @@
 cask "anydrag" do
-  version "1.3.0"
-  sha256 "5d0038806d087b306bf36c1e8618060146f5920e920d7dd29ddb6f559d808e7c"
+  version "1.3.1"
+  sha256 "4de61e4e9efa1b4296c2c7eef541e316c1797553b532edcd04c8a4b421cf8b78"
 
   url "https://github.com/XueshiQiao/AnyDrag/releases/download/v#{version}/AnyDrag.dmg"
   name "AnyDrag"
