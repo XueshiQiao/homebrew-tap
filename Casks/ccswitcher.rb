@@ -1,13 +1,13 @@
 cask "ccswitcher" do
-  version "1.8.1"
-  sha256 arm:   "fd3eb4bed38136ee0ee6d9092fa15c03a824d650220b3af9f840946f6912e13f",
-         intel: "fd3eb4bed38136ee0ee6d9092fa15c03a824d650220b3af9f840946f6912e13f"
+  version "1.8.2"
+  sha256 arm:   "b208f76311497c2983c51f505aa640003d93b18eaca6aa2fc56de780ced01918",
+         intel: "b208f76311497c2983c51f505aa640003d93b18eaca6aa2fc56de780ced01918"
 
   on_arm do
-    url "https://github.com/XueshiQiao/CCSwitcher/releases/download/v1.8.1/CCSwitcher.dmg"
+    url "https://github.com/XueshiQiao/CCSwitcher/releases/download/v1.8.2/CCSwitcher.dmg"
   end
   on_intel do
-    url "https://github.com/XueshiQiao/CCSwitcher/releases/download/v1.8.1/CCSwitcher.dmg"
+    url "https://github.com/XueshiQiao/CCSwitcher/releases/download/v1.8.2/CCSwitcher.dmg"
   end
 
   name "CCSwitcher"
