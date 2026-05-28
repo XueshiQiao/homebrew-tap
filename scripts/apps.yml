@@ -43,3 +43,13 @@ apps:
     latest_json_url: "https://github.com/XueshiQiao/CCSwitcher/releases/latest/download/latest.json"
     asset_arm: "CCSwitcher.dmg"
     asset_intel: "CCSwitcher.dmg"
+
+  - cask_token: "anydrag"
+    app_name: "AnyDrag"
+    desc: "Move any window by holding a modifier key and dragging anywhere on it"
+    homepage: "https://github.com/XueshiQiao/AnyDrag"
+    app_bundle: "AnyDrag.app"
+    latest_json_url: "https://github.com/XueshiQiao/AnyDrag/releases/latest/download/latest.json"
+    asset_arm: "AnyDrag.dmg"
+    asset_intel: "AnyDrag.dmg"
+    depends_on_macos: ":ventura"

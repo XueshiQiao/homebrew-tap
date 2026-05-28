@@ -120,6 +120,12 @@ def ensure_asset_url(url: str, asset_name: str) -> str:
 
 
 def render_cask(config: Dict[str, str], version: str, arm_url: str, intel_url: str, arm_sha: str, intel_sha: str) -> str:
+    # Optional macOS-version gate. When `depends_on_macos` is set in apps.yml
+    # (e.g. ":ventura" or ":sonoma"), emit a `depends_on macos:` stanza so brew
+    # refuses to install on older macOS. Absent → no stanza (back-compat for
+    # existing entries that omit the key).
+    depends_macos = config.get("depends_on_macos", "").strip()
+    depends_block = f"\n  depends_on macos: {depends_macos}\n" if depends_macos else ""
     return f"""cask "{config["cask_token"]}" do
   version "{version}"
   sha256 arm:   "{arm_sha}",
@@ -142,7 +148,7 @@ def render_cask(config: Dict[str, str], version: str, arm_url: str, intel_url: s
     url "{config["latest_json_url"]}"
     regex(/"version"\\s*:\\s*"([^"]+)"/i)
   end
-
+{depends_block}
   app "{config["app_bundle"]}"
 end
 """
