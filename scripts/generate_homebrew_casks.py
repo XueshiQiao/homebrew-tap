@@ -125,7 +125,7 @@ def render_cask(config: Dict[str, str], version: str, arm_url: str, intel_url: s
     # refuses to install on older macOS. Absent → no stanza (back-compat for
     # existing entries that omit the key).
     depends_macos = config.get("depends_on_macos", "").strip()
-    depends_block = f"\n  depends_on macos: {depends_macos}\n" if depends_macos else ""
+    depends_block = f"  depends_on macos: {depends_macos}\n" if depends_macos else ""
     return f"""cask "{config["cask_token"]}" do
   version "{version}"
   sha256 arm:   "{arm_sha}",
