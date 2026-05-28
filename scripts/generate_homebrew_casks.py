@@ -142,12 +142,12 @@ def render_cask(config: Dict[str, str], version: str, arm_url: str, intel_url: s
   desc "{config["desc"]}"
   homepage "{config["homepage"]}"
 
-  auto_updates true
-
   livecheck do
     url "{config["latest_json_url"]}"
     regex(/"version"\\s*:\\s*"([^"]+)"/i)
   end
+
+  auto_updates true
 {depends_block}
   app "{config["app_bundle"]}"
 end
