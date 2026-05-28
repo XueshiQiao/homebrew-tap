@@ -14,12 +14,12 @@ cask "anydrag" do
   desc "Move any window by holding a modifier key and dragging anywhere on it"
   homepage "https://github.com/XueshiQiao/AnyDrag"
 
-  auto_updates true
-
   livecheck do
     url "https://github.com/XueshiQiao/AnyDrag/releases/latest/download/latest.json"
     regex(/"version"\s*:\s*"([^"]+)"/i)
   end
+
+  auto_updates true
 
   depends_on macos: :ventura
 
