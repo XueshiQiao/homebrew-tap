@@ -20,7 +20,6 @@ cask "anydrag" do
   end
 
   auto_updates true
-
   depends_on macos: :ventura
 
   app "AnyDrag.app"
