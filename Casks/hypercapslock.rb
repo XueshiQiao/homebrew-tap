@@ -1,25 +1,25 @@
 cask "hypercapslock" do
-  version "26.05.101"
-  sha256 arm:   "1200cd1921b6d91a283574e3125551d67e1eb3570650b5fe03a4f53e9f0d5562",
-         intel: "1200cd1921b6d91a283574e3125551d67e1eb3570650b5fe03a4f53e9f0d5562"
+  version "26.06.102"
+  sha256 arm:   "496449b9b419f0e20ad58340e59544a432a07fc267f1498976b142276827a6b2",
+         intel: "496449b9b419f0e20ad58340e59544a432a07fc267f1498976b142276827a6b2"
 
   on_arm do
-    url "https://github.com/XueshiQiao/HyperCapslock/releases/download/v26.05.101/HyperCapslock.dmg"
+    url "https://github.com/XueshiQiao/HyperCapslock/releases/download/v26.06.102/HyperCapslock.dmg"
   end
   on_intel do
-    url "https://github.com/XueshiQiao/HyperCapslock/releases/download/v26.05.101/HyperCapslock.dmg"
+    url "https://github.com/XueshiQiao/HyperCapslock/releases/download/v26.06.102/HyperCapslock.dmg"
   end
 
   name "HyperCapslock"
   desc "Caps Lock enhancement utility"
   homepage "https://github.com/XueshiQiao/HyperCapslock"
 
-  auto_updates true
-
   livecheck do
     url "https://github.com/XueshiQiao/HyperCapslock/releases/latest/download/latest.json"
     regex(/"version"\s*:\s*"([^"]+)"/i)
   end
+
+  auto_updates true
 
   app "HyperCapslock.app"
 end
