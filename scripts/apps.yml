@@ -53,3 +53,13 @@ apps:
     asset_arm: "AnyDrag.dmg"
     asset_intel: "AnyDrag.dmg"
     depends_on_macos: ":ventura"
+
+  - cask_token: "xtools"
+    app_name: "XTools"
+    desc: "Menu bar toolbox of small macOS system utilities, one per tab"
+    homepage: "https://github.com/XueshiQiao/XTools"
+    app_bundle: "XTools.app"
+    latest_json_url: "https://github.com/XueshiQiao/XTools/releases/latest/download/latest.json"
+    asset_arm: "XTools.dmg"
+    asset_intel: "XTools.dmg"
+    depends_on_macos: ":ventura"
