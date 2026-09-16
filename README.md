@@ -14,8 +14,14 @@ Or tap first, then install by short name:
 
 ```bash
 brew tap XueshiQiao/tap
+brew trust XueshiQiao/tap   # Homebrew 7.0+ only; older versions have no `trust` command
 brew install --cask xtools
 ```
+
+The `brew trust` line is what Homebrew 7.0 added: a cask from a third-party tap
+will not load unless the tap is trusted, *or* the cask is named in full on the
+command line. That is why the one-liner above works without it and the short
+name does not.
 
 ## Apps
 

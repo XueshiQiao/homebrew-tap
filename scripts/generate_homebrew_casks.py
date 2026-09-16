@@ -144,6 +144,7 @@ def render_cask(config: Dict[str, str], version: str, arm_url: str, intel_url: s
 
   livecheck do
     url "{config["latest_json_url"]}"
+    strategy :page_match
     regex(/"version"\\s*:\\s*"([^"]+)"/i)
   end
 

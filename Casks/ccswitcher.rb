@@ -16,6 +16,7 @@ cask "ccswitcher" do
 
   livecheck do
     url "https://github.com/XueshiQiao/CCSwitcher/releases/latest/download/latest.json"
+    strategy :page_match
     regex(/"version"\s*:\s*"([^"]+)"/i)
   end
 

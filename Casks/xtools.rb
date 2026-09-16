@@ -16,6 +16,7 @@ cask "xtools" do
 
   livecheck do
     url "https://github.com/XueshiQiao/XTools/releases/latest/download/latest.json"
+    strategy :page_match
     regex(/"version"\s*:\s*"([^"]+)"/i)
   end
 
