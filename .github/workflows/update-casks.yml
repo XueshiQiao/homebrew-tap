@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       app_token:
-        description: 'App Token to update (e.g. pastepaw, netstat-cat)'
+        description: 'App Token to update (e.g. xtools, netstat-cat)'
         required: true
         type: string
 

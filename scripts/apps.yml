@@ -1,12 +1,14 @@
 apps:
-  - cask_token: "pastepaw"
-    app_name: "PastePaw"
-    desc: "Clipboard history manager"
-    homepage: "https://github.com/XueshiQiao/PastePaw"
-    app_bundle: "PastePaw.app"
-    latest_json_url: "https://github.com/XueshiQiao/PastePaw/releases/latest/download/latest.json"
-    asset_arm: "PastePaw_aarch64.app.tar.gz"
-    asset_intel: "PastePaw_x64.app.tar.gz"
+  # pastepaw — removed 2026-09-16. The cask pointed at the rolling `main`
+  # release of XueshiQiao/PastePaw, and both of its assets now 404: that repo
+  # is the Windows (Tauri) project now and its latest.json carries only
+  # windows-* platforms, so this generator could not refresh it either.
+  # The macOS app moved to the Mac App Store. Bringing the cask back means
+  # pointing it at the direct-sale channel instead (a signed + notarized DMG
+  # at https://dl.pastepaw.com/, license-key activation, its own Sparkle
+  # appcast) — which needs a different input than latest_json_url, and needs
+  # the direct-sale channel to start shipping again: it is still on 1.7.0
+  # from 2026-04 while the App Store build is on 2.6.0.
 
   - cask_token: "hypercapslock"
     app_name: "HyperCapslock"

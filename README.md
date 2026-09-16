@@ -29,7 +29,6 @@ name does not.
 |---|---|---|
 | `xtools` | [XTools](https://github.com/XueshiQiao/XTools) | Menu bar toolbox of small macOS system utilities, one per tab |
 | `anydrag` | [AnyDrag](https://github.com/XueshiQiao/AnyDrag) | Move any window by holding a modifier key and dragging anywhere on it |
-| `pastepaw` | [PastePaw](https://github.com/XueshiQiao/PastePaw) | Clipboard history manager |
 | `ccswitcher` | [CCSwitcher](https://github.com/XueshiQiao/CCSwitcher) | Menu bar app to manage and switch between Claude Code accounts |
 | `hypercapslock` | [HyperCapslock](https://github.com/XueshiQiao/HyperCapslock) | Caps Lock enhancement utility |
 | `netstat-cat` | [Netstat Cat](https://github.com/XueshiQiao/netstat-cat) | GUI application for netstat |
@@ -38,7 +37,7 @@ name does not.
 Install several at once:
 
 ```bash
-brew install --cask xtools anydrag pastepaw
+brew install --cask xtools anydrag ccswitcher
 ```
 
 ## Generate Casks (Python)
