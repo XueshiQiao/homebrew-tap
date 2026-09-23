@@ -65,3 +65,13 @@ apps:
     asset_arm: "XTools.dmg"
     asset_intel: "XTools.dmg"
     depends_on_macos: ":ventura"
+
+  - cask_token: "qduo"
+    app_name: "QDuo"
+    desc: "Popup of your own actions, including AI prompts, for selected text"
+    homepage: "https://github.com/XueshiQiao/qduo"
+    app_bundle: "QDuo.app"
+    latest_json_url: "https://github.com/XueshiQiao/qduo/releases/latest/download/latest.json"
+    asset_arm: "QDuo.dmg"
+    asset_intel: "QDuo.dmg"
+    depends_on_macos: ":ventura"
