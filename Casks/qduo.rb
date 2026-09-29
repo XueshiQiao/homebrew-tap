@@ -1,13 +1,13 @@
 cask "qduo" do
-  version "26.09.12"
-  sha256 arm:   "58356a45a15a31a8b61b0813e927e9f7686b3ff19438817dcfedc1268ff85b3f",
-         intel: "58356a45a15a31a8b61b0813e927e9f7686b3ff19438817dcfedc1268ff85b3f"
+  version "26.09.13"
+  sha256 arm:   "823aa1bdccab154de9889fa82390b5090bf1d2c008d5f7b6e7b74343c11707ff",
+         intel: "823aa1bdccab154de9889fa82390b5090bf1d2c008d5f7b6e7b74343c11707ff"
 
   on_arm do
-    url "https://github.com/XueshiQiao/qduo/releases/download/v26.09.12/QDuo.dmg"
+    url "https://github.com/XueshiQiao/qduo/releases/download/v26.09.13/QDuo.dmg"
   end
   on_intel do
-    url "https://github.com/XueshiQiao/qduo/releases/download/v26.09.12/QDuo.dmg"
+    url "https://github.com/XueshiQiao/qduo/releases/download/v26.09.13/QDuo.dmg"
   end
 
   name "QDuo"
