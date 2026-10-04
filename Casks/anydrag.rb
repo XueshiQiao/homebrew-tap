@@ -1,13 +1,13 @@
 cask "anydrag" do
-  version "26.10.116"
-  sha256 arm:   "9deb5e4ba40ab33f3a01e61c5597f73fcbb66a52a8abc881efdd724ea007d392",
-         intel: "9deb5e4ba40ab33f3a01e61c5597f73fcbb66a52a8abc881efdd724ea007d392"
+  version "26.10.117"
+  sha256 arm:   "56f459c91da2487ae99d75eb912c012df4491e5db9ba313479c9bb8b1e5e5dc8",
+         intel: "56f459c91da2487ae99d75eb912c012df4491e5db9ba313479c9bb8b1e5e5dc8"
 
   on_arm do
-    url "https://github.com/XueshiQiao/AnyDrag/releases/download/v26.10.116/AnyDrag.dmg"
+    url "https://github.com/XueshiQiao/AnyDrag/releases/download/v26.10.117/AnyDrag.dmg"
   end
   on_intel do
-    url "https://github.com/XueshiQiao/AnyDrag/releases/download/v26.10.116/AnyDrag.dmg"
+    url "https://github.com/XueshiQiao/AnyDrag/releases/download/v26.10.117/AnyDrag.dmg"
   end
 
   name "AnyDrag"
