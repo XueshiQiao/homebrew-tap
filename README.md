@@ -28,16 +28,19 @@ name does not.
 | Cask | App | What it does |
 |---|---|---|
 | `xtools` | [XTools](https://github.com/XueshiQiao/XTools) | Menu bar toolbox of small macOS system utilities, one per tab |
-| `anydrag` | [AnyDrag](https://github.com/XueshiQiao/AnyDrag) | Move any window by holding a modifier key and dragging anywhere on it |
 | `ccswitcher` | [CCSwitcher](https://github.com/XueshiQiao/CCSwitcher) | Menu bar app to manage and switch between Claude Code accounts |
 | `hypercapslock` | [HyperCapslock](https://github.com/XueshiQiao/HyperCapslock) | Caps Lock enhancement utility |
 | `netstat-cat` | [Netstat Cat](https://github.com/XueshiQiao/netstat-cat) | GUI application for netstat |
 | `notifier` | [Notifier](https://github.com/XueshiQiao/Notifier) | Never miss a prompt again |
 
+AnyDrag is no longer in this tap: it is in the official Homebrew cask repository now, so
+install it with `brew install --cask anydrag`. `tap_migrations.json` points the old
+`XueshiQiao/tap/anydrag` name at it.
+
 Install several at once:
 
 ```bash
-brew install --cask xtools anydrag ccswitcher
+brew install --cask xtools ccswitcher
 ```
 
 ## Generate Casks (Python)

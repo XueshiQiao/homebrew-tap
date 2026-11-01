@@ -5,7 +5,7 @@ This document describes the automated pipeline for updating the Homebrew casks i
 ## Overview
 
 The pipeline consists of two main parts:
-1. **App Repositories (The Triggers):** When a new release is created in any of the application repositories (e.g., XTools, AnyDrag, Netstat Cat, HyperCapslock), a GitHub Actions workflow builds the assets, publishes the release, and then triggers a `repository_dispatch` event to this `homebrew_tap` repository.
+1. **App Repositories (The Triggers):** When a new release is created in any of the application repositories (e.g., XTools, Netstat Cat, HyperCapslock), a GitHub Actions workflow builds the assets, publishes the release, and then triggers a `repository_dispatch` event to this `homebrew_tap` repository.
 2. **Homebrew Tap Repository (The Actor):** A GitHub Actions workflow in this repository (`update-casks.yml`) listens for the `repository_dispatch` event. Upon receiving it, it runs a Python script to fetch the latest release information, generates the updated Homebrew cask (`.rb` file), and automatically commits and pushes the changes back to this repository.
 
 ## Sequence Diagram
