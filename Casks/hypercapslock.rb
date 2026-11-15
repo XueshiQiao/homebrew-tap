@@ -1,13 +1,13 @@
 cask "hypercapslock" do
-  version "26.11.113"
-  sha256 arm:   "dcab8fa8ec1ce25d4bfb24785f0cf0ef89363c7f818d651903a821930d1d31ae",
-         intel: "dcab8fa8ec1ce25d4bfb24785f0cf0ef89363c7f818d651903a821930d1d31ae"
+  version "26.11.114"
+  sha256 arm:   "543c4d8af1cf06ab282c3ec66f4aaf3bb2b83d5a78467b9e5503f99ddd30217d",
+         intel: "543c4d8af1cf06ab282c3ec66f4aaf3bb2b83d5a78467b9e5503f99ddd30217d"
 
   on_arm do
-    url "https://github.com/XueshiQiao/HyperCapslock/releases/download/v26.11.113/HyperCapslock.dmg"
+    url "https://github.com/XueshiQiao/HyperCapslock/releases/download/v26.11.114/HyperCapslock.dmg"
   end
   on_intel do
-    url "https://github.com/XueshiQiao/HyperCapslock/releases/download/v26.11.113/HyperCapslock.dmg"
+    url "https://github.com/XueshiQiao/HyperCapslock/releases/download/v26.11.114/HyperCapslock.dmg"
   end
 
   name "HyperCapslock"
