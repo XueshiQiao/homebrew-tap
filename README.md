@@ -31,7 +31,6 @@ name does not.
 | `ccswitcher` | [CCSwitcher](https://github.com/XueshiQiao/CCSwitcher) | Menu bar app to manage and switch between Claude Code accounts |
 | `hypercapslock` | [HyperCapslock](https://github.com/XueshiQiao/HyperCapslock) | Caps Lock enhancement utility |
 | `netstat-cat` | [Netstat Cat](https://github.com/XueshiQiao/netstat-cat) | GUI application for netstat |
-| `notifier` | [Notifier](https://github.com/XueshiQiao/Notifier) | Never miss a prompt again |
 
 AnyDrag is no longer in this tap: it is in the official Homebrew cask repository now, so
 install it with `brew install --cask anydrag`. `tap_migrations.json` points the old
