@@ -1,13 +1,13 @@
 cask "xtools" do
-  version "26.07.14"
-  sha256 arm:   "57cdf0b5d4bab31fcad9f1f5b38c725b83f56094eaf39317ff0a8d17564229f9",
-         intel: "57cdf0b5d4bab31fcad9f1f5b38c725b83f56094eaf39317ff0a8d17564229f9"
+  version "26.11.15"
+  sha256 arm:   "3bd223c1fcf37360cee1fa24458b8d332e39cf3e9e2245f9b06659bbd79bcec3",
+         intel: "3bd223c1fcf37360cee1fa24458b8d332e39cf3e9e2245f9b06659bbd79bcec3"
 
   on_arm do
-    url "https://github.com/XueshiQiao/XTools/releases/download/v26.07.14/XTools.dmg"
+    url "https://github.com/XueshiQiao/XTools/releases/download/v26.11.15/XTools.dmg"
   end
   on_intel do
-    url "https://github.com/XueshiQiao/XTools/releases/download/v26.07.14/XTools.dmg"
+    url "https://github.com/XueshiQiao/XTools/releases/download/v26.11.15/XTools.dmg"
   end
 
   name "XTools"
